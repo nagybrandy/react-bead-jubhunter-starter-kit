@@ -233,7 +233,7 @@ Az egész projektet tömörítsd be, kliensestül, szerverestül, és azt tölts
 
 Az elkészült program beadása a Canvasen történik, és két dolgot kell ide feltöltenetek. Erre azért van szükség, hogy megkönnyítsétek a gyakorlatvezetőitek dolgát, és a linket megtekintve ki tudják próbálni a projekteteket. Ne feledjétek, hogy a határidő fix, ezzel késni nem tudtok!
 
-1. StackBlitz - https://stackblitz.com/ Hozzatok létre egy új projektet itt, vagy kössétek össze a GitHub repotokkal, és készítsetek egy megosztható linket a projektből, úgy, hogy csak a linkkel lehessen elérni azt. Ne publikáljátok, hiszen akkor megvan az esély arra, hogy más rátalál a projektetekre, és ilyenkor kódegyezés esetén ezt nem fogjuk tudni kinyomozni.
+1. StackBlitz - [https://stackblitz.com/](https://stackblitz.com/) Hozzatok létre egy új projektet itt, vagy kössétek össze a GitHub repotokkal, és készítsetek egy megosztható linket a projektből, úgy, hogy csak a linkkel lehessen elérni azt. Ne publikáljátok, hiszen akkor megvan az esély arra, hogy más rátalál a projektetekre, és ilyenkor kódegyezés esetén ezt nem fogjuk tudni kinyomozni.
 2. Fájlok feltöltése tömörített mappaként. Beadás előtt a `node_modules` mappa törlendő! Beadás előtt próbáljátok ki, hogy az alábbi utasításokkal működik:
 
 ## **Pontozás**

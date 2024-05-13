@@ -1,0 +1,74 @@
+{
+  "name": "rest-api",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "keywords": [
+    "feathers"
+  ],
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 20.11.1"
+  },
+  "feathers": {
+    "language": "ts",
+    "packager": "npm",
+    "database": "sqlite",
+    "framework": "koa",
+    "transports": [
+      "rest"
+    ],
+    "schema": "typebox"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "main": "lib/index",
+  "scripts": {
+    "dev": "nodemon -x ts-node src/index.ts",
+    "compile": "shx rm -rf lib/ && tsc",
+    "start": "node lib/",
+    "prettier": "npx prettier \"**/*.ts\" --write",
+    "mocha": "cross-env NODE_ENV=test mocha test/ --require ts-node/register --recursive --extension .ts --exit",
+    "test": "cross-env NODE_ENV=test npm run migrate && npm run mocha",
+    "bundle:client": "npm run compile && npm pack --pack-destination ./public",
+    "migrate": "knex migrate:latest",
+    "migrate:make": ""
+  },
+  "dependencies": {
+    "@feathersjs/adapter-commons": "^5.0.24",
+    "@feathersjs/authentication": "^5.0.24",
+    "@feathersjs/authentication-client": "^5.0.24",
+    "@feathersjs/authentication-local": "^5.0.24",
+    "@feathersjs/authentication-oauth": "^5.0.24",
+    "@feathersjs/configuration": "^5.0.24",
+    "@feathersjs/errors": "^5.0.24",
+    "@feathersjs/feathers": "^5.0.24",
+    "@feathersjs/knex": "^5.0.24",
+    "@feathersjs/koa": "^5.0.24",
+    "@feathersjs/schema": "^5.0.24",
+    "@feathersjs/transport-commons": "^5.0.24",
+    "@feathersjs/typebox": "^5.0.24",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@feathersjs/cli": "^5.0.24",
+    "@feathersjs/rest-client": "^5.0.24",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.26",
+    "axios": "^1.6.7",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.3.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
